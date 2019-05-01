@@ -1,0 +1,43 @@
+{
+  "name": "check-equal",
+  "version": "1.0.3",
+  "description": "A Javascript library to check two objects whether equal (includes type), objects can be array/string/number/JSON/function, etc.",
+  "main": "index.js",
+  "author": "Janden Ma",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "dev": "webpack --mode development --module-bind js=babel-loader",
+    "build": "webpack --mode production --module-bind js=babel-loader"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JandenMa/check-equal"
+  },
+  "keywords": [
+    "Check objects equal",
+    "compare"
+  ],
+  "files": [
+    "index.js",
+    ".gitignore",
+    "package.json",
+    "README.md",
+    "LICENCE"
+  ],
+  "bugs": {
+    "url": "https://github.com/JandenMa/check-equal/issues",
+    "email": "516113525@qq.com"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0"
+  }
+}
