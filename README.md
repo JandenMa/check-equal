@@ -25,13 +25,13 @@
 - Import
 
 - ``` javascript
-  import {CheckEqual} from 'check-equal'
+  import {checkEqual} from 'check-equal'
   ```
 
 - Require
 
   ```javascript
-  const {CheckEqual} = require('check-equal')
+  const {checkEqual} = require('check-equal')
   ```
 
 
@@ -40,45 +40,45 @@
 
 ```javascript
 //Check two numbers 
-CheckEqual(1, 1); //true
-CheckEqual(1, 2); //false
-CheckEqual(1.2, 1.2); //true
+checkEqual(1, 1); //true
+checkEqual(1, 2); //false
+checkEqual(1.2, 1.2); //true
 
 //Check two strings
-CheckEqual('1', '1'); //true
-CheckEqual('1', '2'); //false
-CheckEqual('Tom', 'Jerry'); //false
+checkEqual('1', '1'); //true
+checkEqual('1', '2'); //false
+checkEqual('Tom', 'Jerry'); //false
 
 //Check different types
-CheckEqual('1', 1); //false
-CheckEqual('false', false); //false
+checkEqual('1', 1); //false
+checkEqual('false', false); //false
 
 //Check two booleans
-CheckEqual(true, true); //true
-CheckEqual(true, false); //false
+checkEqual(true, true); //true
+checkEqual(true, false); //false
 
 //Check two arrays (will sort array items automatically, ignore the array which has different types)
-CheckEqual([1, 2, 3], [1, 2, 3]); //true
-CheckEqual([1, 2, 3], [3, 1, 2]); //true
-CheckEqual([1, 2, 3], [1, 2]); //false (different length)
-CheckEqual(['a', 'b', 'c'], ['a', 'b', 'c']); //true
-CheckEqual(['a', 'b', 'c'], ['b', 'c', 'a']); //true
-CheckEqual(['a', 'b', 'c'], ['a', 'B', 'c']); //false
+checkEqual([1, 2, 3], [1, 2, 3]); //true
+checkEqual([1, 2, 3], [3, 1, 2]); //true
+checkEqual([1, 2, 3], [1, 2]); //false (different length)
+checkEqual(['a', 'b', 'c'], ['a', 'b', 'c']); //true
+checkEqual(['a', 'b', 'c'], ['b', 'c', 'a']); //true
+checkEqual(['a', 'b', 'c'], ['a', 'B', 'c']); //false
 
 //Check two Objects
-CheckEqual(
+checkEqual(
   {a: '1', b: 2, c: false, d:[1, 3, 5, 7], e:{x: 'x', y: 'y'}}, 
   {a: '1', b: 2, c: false, d:[1, 3, 5, 7], e:{x: 'x', y: 'y'}}
 ); //true
-CheckEqual(
+checkEqual(
   {a: '1', b: 2, c: false, d:[3, 7, 1, 5]}, 
   {a: '1', b: 2, c: false, d:[1, 3, 5, 7]}
 ); //true
-CheckEqual(
+checkEqual(
   {a: '1', b: 2, c: false, d:[1, 3, 5, 7], e:{x: 'x', y: 'y', z: 'z'}}, 
   {a: '1', b: 2, c: false, d:[1, 3, 5, 7], e:{x: 'x', y: 'y'}}
 ); //false
-CheckEqual({a: '2', b: 2, c: false}, {a: '1', b: 2, c: false}); //false
-CheckEqual({a: '1', b: 2, c: true}, {a: '1', b: 2, c: false}); //false
-CheckEqual({a: '1', b: 0, c: false}, {a: '1', b: 2, c: false}); //false
+checkEqual({a: '2', b: 2, c: false}, {a: '1', b: 2, c: false}); //false
+checkEqual({a: '1', b: 2, c: true}, {a: '1', b: 2, c: false}); //false
+checkEqual({a: '1', b: 0, c: false}, {a: '1', b: 2, c: false}); //false
 ```
