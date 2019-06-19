@@ -19,7 +19,7 @@
 ## Change Logs
 
 - v1.0.0 - v1.0.3: First published version, it can be used in frontend
-- v1.0.4 - v1.0.5: Updated webpack config, now it can be used in frontend and backend
+- v1.0.4 - v1.0.6: Updated webpack config, now it can be used in frontend and backend
 
 ## Usage
 
