@@ -2,7 +2,7 @@ const path = require('path')
 
 // wenpack configuration
 module.exports = {
-  devtool: 'source-map',
+  // devtool: 'source-map',
   entry: {
     index: './CheckEqual.js'
   },
@@ -19,7 +19,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname),
     filename: 'index.js',
-    library: ['xxx-components', '[name]'],
-    libraryTarget: 'umd'
+    libraryTarget: 'commonjs2'
   }
 }
