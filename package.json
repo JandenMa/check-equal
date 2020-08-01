@@ -1,6 +1,6 @@
 {
   "name": "check-equal",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A Javascript library to check two objects whether equal (includes type), objects can be array/string/number/JSON/function, etc.",
   "main": "index.js",
   "author": "Janden Ma",
