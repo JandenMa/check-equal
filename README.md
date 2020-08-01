@@ -20,6 +20,7 @@
 
 - v1.0.0 - v1.0.3: First published version, it can be used in frontend
 - v1.0.4 - v1.0.6: Updated webpack config, now it can be used in frontend and backend
+- V1.0.7: Update `hasOwnProperty` judgement
 
 ## Usage
 
