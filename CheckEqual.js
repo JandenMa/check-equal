@@ -90,7 +90,7 @@ const checkObjectEqual = (objA, objB) => {
  * @version 1.0.0
  */
 const sortArray = arr => {
-  arr.sort((a, b) => {
+  [...arr].sort((a, b) => {
     //if type of neighboring items in array are different, needn't sort
     if (typeof a !== typeof b) return 0;
     //if type of items in array are number or string, sort ascending
