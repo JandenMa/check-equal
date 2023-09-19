@@ -2,6 +2,12 @@
 
 > This is a Javascript library to check two objects whether equal (includes type), object can be array/string/number/JSON/function, etc.
 
+## Warning
+
+This package is now EOL, you can continue to use it but maybe no more support or maintenance. 
+
+Well, don't worry, you can migrate to **[@rinxun/check-equal](https://www.npmjs.com/package/@rinxun/check-equal)** seamlessly, and the new package is more friendly with TypeScript.
+
 ## Install
 
 - npm
